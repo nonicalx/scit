@@ -1,3 +1,9 @@
+:root{
+  --main-color: #007AFF;
+  --input-color: #F8F8F9;
+  --text-color: #333333;
+}
+
 *{
   font-size: 16px;
 }
@@ -29,6 +35,6 @@
 
 @media(max-width: 425px){
   *{
-    font-size: 6px;
+    font-size: 7px;
   }
 }
