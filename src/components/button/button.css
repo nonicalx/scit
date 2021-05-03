@@ -1,0 +1,34 @@
+.scit-btn {
+  box-shadow: -3.86207px 3.08966px 53.2966px rgba(0, 0, 0, 0.13);
+  border-radius: 6.17931px;
+  min-width: 104px;
+  max-width: 668px;
+  width: 100%;
+  padding: 10.73px 22.39px;
+  margin: 10.73px 22.39px;
+  transition: all 0.4s;
+}
+
+.scit-main-btn {
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+}
+
+.scit-btn:focus {
+  outline: none;
+}
+
+.scit-btn:active{
+    transform: scale(0.9, 0.9);
+    transition: all 0.4s;
+}
+
+
+
+.scit-sec-btn {
+  background: #ffffff;
+  border: 1px solid var(--main-color);
+}
+
+
