@@ -8,7 +8,6 @@ const AppComponents = () => {
         <Button content="button" type="primary" />
         <Button content="button" type="secondary" />
       </div>
-      <Navigator />
     </div>
   );
 };
