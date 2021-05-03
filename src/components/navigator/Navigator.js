@@ -1,3 +1,5 @@
+import {useState} from 'react';
+
 import "./navigator.css";
 import logo from "../../assets/images/scitSideLogo.svg";
 import general from "../../assets/images/generalIcon.svg";
@@ -11,6 +13,19 @@ import editProfile from "../../assets/images/editProfileIcon.svg";
 import dropArrow from "../../assets/images/dropArrowIcon.svg";
 
 const Navigator = () => {
+
+    const [opens, setOpens] = useState({
+        faculty: false,
+        dept: false
+    })
+
+    /**
+     * sets opens to open or close a list in the side nav
+     * @param {string} listToOpen 
+     */
+    const openUp=(listToOpen)=>{
+        setOpens({...opens, [listToOpen]: !opens[listToOpen]})
+    }
   return (
     <div className="scit-side-nav">
       <div>
@@ -23,14 +38,14 @@ const Navigator = () => {
             <img src={general} alt="general" />
             <p className="scit-main-side-header general-header">General</p>
           </div>
-          <div className="d-flex align-items-center justify-content-between w-100">
+          <div className="d-flex align-items-center justify-content-between w-100" onClick={()=>{openUp('faculty')}}>
               <div className="d-flex align-items-center">
             <img src={faculty} alt="faculty" />
             <p className="scit-main-side-header faculty-header">Faculty</p>
               </div>
-            <img src={dropArrow} alt="drop down" className="mr-3" />
+            <img src={dropArrow} alt="drop down" className={`mr-3 ${!opens.faculty?'close-drop':'open-drop'}`} />
           </div>
-          <ul className="scit-side-mains scit-sub-list">
+          <ul className="scit-side-mains scit-sub-list" style={{display: !opens.faculty?'none':''}}>
             <li className="d-flex align-items-center">
               <img src={navListItem} alt="list item" />
               <p>SCIT</p>
@@ -55,14 +70,14 @@ const Navigator = () => {
         </article>
 
         <article>
-          <div className="d-flex align-items-center justify-content-between w-100">
+          <div className="d-flex align-items-center justify-content-between w-100" onClick={()=>{openUp('dept')}}>
               <div className="d-flex align-items-center">
             <img src={department} alt="department" />
             <p className="scit-main-side-header edit-header">Department</p>
               </div>
-              <img src={dropArrow} alt="drop down" className="mr-3"/>
+              <img src={dropArrow} alt="drop down" className={`mr-3 ${!opens.dept?'close-drop':'open-drop'}`}/>
           </div>
-          <ul className="scit-side-mains scit-sub-list">
+          <ul className="scit-side-mains scit-sub-list" style={{display: !opens.dept?'none':''}}>
             <li className="d-flex align-items-center">
               <img src={navListItem} alt="list item" />
               <p>Computer Science</p>

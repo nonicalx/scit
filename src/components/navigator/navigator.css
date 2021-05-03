@@ -1,5 +1,7 @@
 .scit-side-nav {
   width: 240px;
+  height: 100vh;
+  overflow: auto;
   box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.05);
 }
 
@@ -97,4 +99,12 @@
 
 .scit-sub-list{
     margin-left: 32px !important;
+}
+.close-drop{
+  transition: all 0.2s;
+}
+
+.open-drop{
+  transform: rotate(-90deg);
+  transition: all 0.2s;
 }
