@@ -1,12 +1,17 @@
 import React from 'react'
-import {Header} from '../exporter'
+import {Header, Navigator} from '../exporter'
 
 const Layout = ({children}) => {
     return (
+        <main className="scit-layout">
+            <div>
+                <Navigator/>
+            </div>
         <div>
             <Header/>
             {children}
         </div>
+        </main>
     )
 }
 

@@ -39,3 +39,9 @@
     font-size: 7px;
   }
 }
+
+
+.scit-layout{
+  display: grid;
+  grid-template-columns: 240px auto;
+}
