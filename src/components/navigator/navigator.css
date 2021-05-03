@@ -1,0 +1,100 @@
+.scit-side-nav {
+  width: 240px;
+  box-shadow: 0px 4px 63px rgba(0, 0, 0, 0.05);
+}
+
+.scit-side-nav header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 158%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #818181;
+  padding-left: 8px;
+  padding-bottom: 20px;
+  padding-top: 12px;
+}
+
+.scit-side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scit-side-nav ul li p {
+  margin: 0;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 138%;
+  letter-spacing: 0.05em;
+  color: #0a3977;
+  margin-bottom: 0;
+  margin-left: 8px;
+}
+
+.scit-side-nav p {
+  margin-bottom: 0;
+}
+
+.scit-side-nav section {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 12px;
+}
+
+.scit-side-nav section:last-child {
+  border-bottom: none;
+}
+
+.scit-side-logo {
+  margin: 40px 17px;
+  margin-bottom: 28px;
+}
+
+.scit-side-mains {
+  margin-bottom: 9px;
+}
+
+.service-txt {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 142%;
+  letter-spacing: 0.0168em;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #1672ec;
+}
+
+.scit-main-side-header {
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 138% !important;
+  display: flex !important;
+  align-items: center !important;
+  letter-spacing: 0.05em !important;
+  margin-left: 8px !important;
+}
+
+.edit-header {
+  color: #155d18 !important;
+}
+
+.general-header {
+  color: #0a3977 !important;
+}
+
+.orange-header {
+  color: #7f4c0a !important;
+}
+
+.faculty-header {
+  color: #4d085f !important;
+}
+
+
+.scit-sub-list{
+    margin-left: 32px !important;
+}
