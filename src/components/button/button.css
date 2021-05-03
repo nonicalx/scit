@@ -7,6 +7,11 @@
   padding: 10.73px 22.39px;
   margin: 10.73px 22.39px;
   transition: all 0.4s;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.5379px;
+  line-height: 28px;
+  text-align: center;
 }
 
 .scit-main-btn {
@@ -19,16 +24,13 @@
   outline: none;
 }
 
-.scit-btn:active{
-    transform: scale(0.9, 0.9);
-    transition: all 0.4s;
+.scit-btn:active {
+  transform: scale(0.9, 0.9);
+  transition: all 0.4s;
 }
-
-
 
 .scit-sec-btn {
   background: #ffffff;
   border: 1px solid var(--main-color);
+  color: var(--main-color)
 }
-
-
