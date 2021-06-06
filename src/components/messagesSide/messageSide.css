@@ -1,0 +1,72 @@
+.scit-messages {
+  background-color: white;
+  box-shadow: -5px 4px 69px rgba(0, 0, 0, 0.13);
+  height: 100%;
+}
+
+.scit-blue-header {
+  background-color: var(--main-color);
+  color: #fff;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: -5px 4px 69px rgba(0, 0, 0, 0.13);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 29px;
+}
+
+.scit-chat-dp {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 11px;
+}
+
+.scit-message-side {
+  margin-bottom: 28px;
+  padding: 0 18px;
+  padding-right: 32px;
+}
+
+.scit-side-sender {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.7279px;
+  line-height: 22px;
+  color: #858ec5;
+}
+
+.scit-side-lastMessage {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9.09139px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #292e51;
+}
+
+.scit-notice-count {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: #5fabff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scit-notice-count p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 9.5px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  font-feature-settings: "tnum" on, "lnum" on;
+}

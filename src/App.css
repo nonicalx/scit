@@ -43,5 +43,5 @@
 
 .scit-layout{
   display: grid;
-  grid-template-columns: 240px auto;
+  grid-template-columns: 240px auto 290px;
 }

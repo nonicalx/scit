@@ -1,5 +1,5 @@
 import React from 'react'
-import {Header, Navigator} from '../exporter'
+import {Header, Navigator, MessageSide} from '../exporter'
 
 const Layout = ({children}) => {
     return (
@@ -10,6 +10,9 @@ const Layout = ({children}) => {
         <div>
             <Header/>
             {children}
+        </div>
+        <div>
+            <MessageSide/>
         </div>
         </main>
     )
